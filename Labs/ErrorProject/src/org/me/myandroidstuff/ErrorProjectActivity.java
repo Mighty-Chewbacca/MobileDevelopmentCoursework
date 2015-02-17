@@ -24,6 +24,7 @@ public class ErrorProjectActivity extends Activity implements OnClickListener
     @Override
     public void onCreate(Bundle savedInstanceState) 
     {
+    	Log.e("tracingerror", "started oncreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
@@ -38,10 +39,14 @@ public class ErrorProjectActivity extends Activity implements OnClickListener
         		                    "In prosperity, caution; in adversity, patience",
         		                    "It is not the knowing that is difficult, but the doing"};
         
-        aView = (TextView)findViewById(R.id.salutationDisplay);        
-        countDisplay = (Button)findViewById(R.id.countDisplay);        
+        aView = (TextView)findViewById(R.id.salutationDisplay);  
+        Log.e("tracingerror", "finding the textview");
+        countDisplay = (Button)findViewById(R.id.countDisplay); 
+        Log.e("tracingerror", "finding the button");
+        getSaying = (Button)findViewById(R.id.getSaying);
+        Log.e("tracingerror", "finding the getsaying button - error 1 the find call was missing so couldnt add an on click listener");
         getSaying.setOnClickListener(this);        
-        Log.e("MyTag", "help");
+        Log.e("tracingerror", "finished oncreate");
     }
 
 	@Override
@@ -54,6 +59,7 @@ public class ErrorProjectActivity extends Activity implements OnClickListener
 			//check that it is an Integer
 			try
 			{
+				Log.e("tracingerror", "entered try method");
 				// Generate Random number in the range 1 to 10
 				// Generate saying
 				double number = Math.random()*10;
