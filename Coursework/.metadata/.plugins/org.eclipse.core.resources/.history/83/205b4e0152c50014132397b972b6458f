@@ -1,0 +1,14 @@
+package org.me.myandroidstuff;
+
+public class CarPark 
+{
+	//this class is created to be a holder for all the data for a car park that is retrieved from the xml feed
+	//Alexander Malcolm
+	//Student ID -- 
+
+	public CarPark() 
+	{
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,85 @@
+package org.me.myandroidstuff;
+
+public class CarPark 
+{
+	//this class is created to be a holder for all the data for a car park that is retrieved from the xml feed
+	//Alexander Malcolm
+	//Student ID -- 
+	
+	private String name;
+	private String status;
+	private Integer percentOccupied;
+	private Integer occupiedSpaces;
+	private Integer totalSpaces;
+
+	public CarPark() 
+	{
+		name = "";
+		status = "";
+		percentOccupied = 0;
+		occupiedSpaces = 0;
+		totalSpaces = 0;
+	}
+	
+	public CarPark(String newName, String newStatus, Integer newPercentOccupied, Integer newOccupiedSpaces, Integer newTotalSpaces)
+	{
+		name = newName;
+		status = newStatus;
+		percentOccupied = newPercentOccupied;
+		occupiedSpaces = newOccupiedSpaces;
+		totalSpaces = newTotalSpaces;
+	}
+	
+	public void setName(String newName)
+	{
+		name = newName;
+	}
+	public void setStatus(String newStatus)
+	{
+		status = newStatus;
+	}
+	public void setPercentOccupied(Integer newPercentOccupied)
+	{
+		percentOccupied = newPercentOccupied;
+	}
+	public void setOccupiedSpaces(Integer newOccupiedSpaces)
+	{
+		occupiedSpaces = newOccupiedSpaces;
+	}
+	public void setTotalSpaces(Integer newTotalSpaces)
+	{
+		totalSpaces = newTotalSpaces;
+	}
+	
+	public String getName()
+	{
+		return name;	
+	}
+	public String getStatus()
+	{
+		return status;	
+	}
+	public Integer getPercentOccupied()
+	{
+		return percentOccupied;	
+	}
+	public Integer getOccupiedSpaces()
+	{
+		return occupiedSpaces;	
+	}
+	public Integer getTotalSpaces()
+	{
+		return totalSpaces;	
+	}
+	
+	public String toString()
+	{
+		String temp;
+		
+		temp = name + " " + status + " " + percentOccupied.toString() + " " + occupiedSpaces.toString() + " " +
+		totalSpaces.toString();
+		
+		return temp;
+	}
+
+}

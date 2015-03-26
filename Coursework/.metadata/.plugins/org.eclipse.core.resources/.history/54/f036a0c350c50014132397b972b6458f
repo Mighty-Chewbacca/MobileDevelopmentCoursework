@@ -1,0 +1,9 @@
+package org.me.myandroidstuff;
+
+public class CarPark {
+
+	public CarPark() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
